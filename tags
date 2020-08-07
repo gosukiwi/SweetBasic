@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/aac61932/
+Better Types	syntax.md	/^## Better Types$/;"	s	chapter:Syntax
+Comparison / Booleans	README.md	/^## Comparison \/ Booleans$/;"	s	chapter:Features
+Features	README.md	/^# Features$/;"	c
+Functions	syntax.md	/^## Functions$/;"	s	chapter:Syntax
+Generics/Macros (MAYBE)	syntax.md	/^## Generics\/Macros (MAYBE)$/;"	s	chapter:Syntax
+Globals and Constants	syntax.md	/^## Globals and Constants$/;"	s	chapter:Syntax
+Lambdas	syntax.md	/^## Lambdas$/;"	s	chapter:Syntax
+Lambdas / Function Pointers	README.md	/^## Lambdas \/ Function Pointers$/;"	s	chapter:Features
+List Comprehension	syntax.md	/^## List Comprehension$/;"	s	chapter:Syntax
+Literals and Variables	syntax.md	/^## Literals and Variables$/;"	s	chapter:Syntax
+Macros / Generics	README.md	/^## Macros \/ Generics$/;"	s	chapter:Features
+Nested lambdas	syntax.md	/^### Nested lambdas$/;"	S	section:Syntax""Lambdas
+Not Implemented	README.md	/^# Not Implemented$/;"	c
+Polymorphism	syntax.md	/^## Polymorphism$/;"	s	chapter:Syntax
+Smarter Assignment	README.md	/^## Smarter Assignment$/;"	s	chapter:Features
+Standard Library	syntax.md	/^## Standard Library$/;"	s	chapter:Syntax
+String interpolation	README.md	/^## String interpolation$/;"	s	chapter:Features
+SweetBasic	README.md	/^# SweetBasic$/;"	c
+Syntax	syntax.md	/^# Syntax$/;"	c
+Types	syntax.md	/^## Types$/;"	s	chapter:Syntax
