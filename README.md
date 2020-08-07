@@ -4,6 +4,10 @@ AppGameKit's Tier 1 with some sugar on top. Use as much as you want!
 An opinionated superset of AGK's Tier 1. It compiles to Tier 1 and in turn to
 bytecode with the proprietary compiler from AGK Classic.
 
+What does this mean? It means that __any Tier 1 program is also a valid
+SweetBasic program__ (kind of, there are a few exceptions, see [Not
+Implemented](#not-implemented) for details).
+
 It will generate a `main.agc` file in the root directory. You can use it to
 manually compile in Studio if needed.
 
@@ -13,18 +17,24 @@ Extra features:
 
 ## Smarter Assignment
 ```
-# The compiler is smart enough to know what type the variable is when declaring it
+// The compiler is smart enough to know what type the variable is when declaring it
 name = "Mike"
 age = 18
 foo = 1.2
 name$ = "Mike" # you can still do this if you want
 
-# It also works with types and function return values!
-function Person_Create
+// It also works with types and function return values!
+function Person_Create()
   p as tPerson
 endfunction p
 
 person = Person_Create()
+
+// arrays
+foo = [1, 2, 3]
+
+// you can also pass them around
+DoSomething([1, 2, 3])
 ```
 
 ## String interpolation
@@ -67,12 +77,21 @@ For more info on how this work, see [Syntax](syntax.md).
 Log("{i}") for i in [1, 2, 3, 4] when i % 2 is 0 // It will log 2 and 4
 ```
 
-## Macros / Generics
+## Array Operations (TENTATIVE)
+```
+a = [1, 2] + [3] // a = [1, 2, 3]
+[1, 2] << 3      // a = [1, 2].insert(3)
+[1, 2] ^ [3]     // UNION: [1, 2, 3]
+[1, 2] & [2]     // INTERSECTION: [2]
+[1, 2] | [2, 3]  // DIFFERENCE: [1, 3]
+```
+
+## Macros / Generics (TENTATIVE)
 Design for this is still in progress.
 
 # Not Implemented
-**Goto/Subroutines**: `goto` is bad, blah blah. Just use functions.
-**Dim**: There should only be one clear way of declaring arrays. `dim` is
+* **Goto/Subroutines**: `goto` is bad, blah blah. Just use functions.
+* **Dim**: There should only be one clear way of declaring arrays. `dim` is
 purposely not implemented. With the smarter assignment you won't miss it :)
 
 # Why
@@ -86,4 +105,4 @@ generate an executable for Windows, and you can't export to web. Same for Tier
 
 Because SweetBasic compiles to Tier 1, and in turn to Tier 1's bytecode, you can
 use any of the existing Tier 1 interpreters to run your game! Be it mobile,
-desktop or web.
+desktop or web. Also if you already know Tier 1, you know 90% of SweetBasic.
